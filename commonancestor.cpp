@@ -101,13 +101,13 @@ cout<<x;
 
 
 /*
-* Function name: check
-* Description  : Takes the input string puts the character in stack to check whether parentheses is balanced or not
+* Function name: main
+* Description  :form the testcase tree and call the helper function
 *
 *
 *
 
-* Arguments    : string
+* Arguments    : none
 * Return value : none
 */
 int main()
