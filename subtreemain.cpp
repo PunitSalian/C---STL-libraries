@@ -6,24 +6,24 @@
 */
 /*
  tree:
-      |A|
+                         |A|
 			/  \
-		 /    \
-	 |B|     |E|
-	 / \     / \
-	/   \   /   \
-|C|  |D| |F|  |G|
-					   \
-						\
-						|H|
+		       /    \
+	             |B|     |E|
+	             / \     / \
+                    /   \   /   \
+                   |C|  |D| |F|  |G|
+			           \
+                         	    \
+	                 	    |H|
 subtree:correct testcase
 		 |E|
 		 / \
 		/   \
-	 |F|  |G|
-			    \
-			     \
-			     |H|
+	       |F|  |G|
+	               \
+			\
+		        |H|
 
 subtree:incorrect testcase
 			  |E|
