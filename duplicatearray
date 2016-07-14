@@ -8,6 +8,7 @@ using namespace std;
 std::array<int, 9> inp = { 2, 3, 4, 4, 1, 2, 3, 3,6 };
 unordered_map<int, int> hashtable;
 
+//form a hashtable from the array only unique keys are stored thus achieving our goal
 void formhashtable(array<int, 9>& tempinp)
 {
 
