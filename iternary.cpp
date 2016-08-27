@@ -3,8 +3,7 @@
 #include <string>
 using namespace std;
 
-void print(map<string, string> data)
-{
+void print(map<string, string> data){
 	// To store reverse of given map to-from format
 	map<string, string> reversemap;
 	map<string, string>::iterator it;
