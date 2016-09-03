@@ -1,3 +1,4 @@
+//string search,insert,delete done using trie tree in O(m),m=maximum length key
 #include<iostream>
 #include<array>
 using namespace std;
@@ -5,7 +6,7 @@ using namespace std;
 
 #define IS_LEAF true
 #define MAX_LEN 26
-#define GET_INDEX(x)   ((int)x-(int)'a')
+
 
 
 class Node
@@ -28,7 +29,7 @@ void insert(Node*root, string x)
 	//attach to tree
 	for (char ele : x)
 	{
-		int index = GET_INDEX(ele);
+		int index = ((int)ele-(int)'a');
 		if (root->children[index] == NULL)
 		{
 			root->children[index] = new Node();
@@ -48,7 +49,7 @@ int search(string data, Node *root)
 	//trverse the tree for the given data if leaf node is found give word found
 	for (char ele : data)
 	{
-		int index = GET_INDEX(ele);
+		int index = ((int)ele-(int)'a');
 
 		root = root->children[index];
 		if (root == NULL)
@@ -65,7 +66,7 @@ int deletenode(string data, Node *root)
 	//trverse the tree for the given data if leaf node is found make it false so the word is not traced
 	for (char ele : data)
 	{
-		int index = GET_INDEX(ele);
+		int index = ((int)ele-(int)'a');
 
 		root = root->children[index];
 		if (root == NULL)
