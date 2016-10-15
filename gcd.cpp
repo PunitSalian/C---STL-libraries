@@ -18,7 +18,7 @@ int GCD(int x, int y)
 
 int main()
 {
-	cout<<GCD(10, 15);
+	cout<<GCD(18, 20);
 
 	return(0);
 }
